@@ -111,7 +111,7 @@ describe("User interactions through Pokedex", () => {
 
   getSinglePokemon.mockResolvedValueOnce(mockVenusaur);
 
-  it("should allow user to pick and display different pokemon's info", async () => {
+  it.skip("should allow user to pick and display different pokemon's info", async () => {
     const { getByRole, findByText, findByRole, findAllByRole } = render(
       <MemoryRouter>
         <App />
@@ -167,7 +167,7 @@ describe("User interactions through Pokedex", () => {
     expect(pokemonType).toBeInTheDocument();
   });
 
-  it('should allow a user to favorite and unfavorite a pokemon', async () => {
+  it.skip('should allow a user to favorite and unfavorite a pokemon', async () => {
     const { getByRole, getByText, findByText, findByRole, findAllByRole } = render(
       <MemoryRouter>
         <App />
